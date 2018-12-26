@@ -1,0 +1,43 @@
+#container,html,body{
+    width:100%;
+    height:100%;
+    background-color: grey;
+    margin:0;
+    text-align: center;
+}
+.season{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+#chun{
+    background-color:green;
+}
+#xia{
+    background-color: red;
+}
+#qiu{
+    background-color: white;
+}
+#dong{
+    background-color: black;
+    color:white;
+}
+.hidden{
+    animation:hideIt 2s;
+    opacity:0;
+}
+.show{
+    animation: showIt 2s;
+    opacity:100;
+}
+
+@keyframes showIt {
+    from{opacity:0;}
+    to{opacity:100;}
+}
+
+@keyframes hideIt {
+    from{opacity:100;}
+    to{opacity: 0;}
+}
